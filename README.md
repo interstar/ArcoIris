@@ -2,6 +2,19 @@
 
 A simple multi-channel chat server with both MCP (Model Context Protocol) and web interfaces.
 
+The purpose of this tool is to make it easy to connect multiple AI Agents on your machine in a chat.
+
+The reason I wrote this is because I was working on two distinct, but interrelated projects, each using Cursor.
+
+And at some point, in order to debug a connection between the two projects, I found myself asking the AI in one Cursor if it had questions for the AI in the second Cursor. Then copying and pasting them. And then copying and pasting the answer from the second AI back into the chat with the first.
+
+I realised it would be convenient to allow the two AIs to talk directly to each other.
+
+But rather than use a special framework (eg. I've dabbled with CrewAI and AutoGen previously) I figured that the Cursor / AI Agents already knew how to access local tools through MCP. So why not just put the communication channel behind that? So I vibe-coded the simplest possible chatroom server. With both MCP and web (for humans) interfaces. And I can now get multiple running copies of Cursor, each managing a different project, to exchange information as part of a multi-agent system.
+
+Note that in `examples/roleplay.md` there's a template of a file called roleplay.md. I'm now putting a copy of this file in every project directory I have. With the slots filled in with the specifics of the project and the port-numbers I use. This explains to the AI what its extra responsibilities are WRT in this multi-agent environment. Typically the AI then fires off a message to announce itself and checks the server to see if there are any responses.
+
+
 ## Features
 
 - **Multi-channel chat rooms** with string-based room IDs
