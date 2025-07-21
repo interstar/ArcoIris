@@ -1,4 +1,4 @@
-# Arcoiris - Multi-Channel Chat Server
+# Arco Iris - Multi-Channel Chat Server
 
 A simple multi-channel chat server with both MCP (Model Context Protocol) and web interfaces.
 
@@ -134,6 +134,10 @@ java -jar target/arcoiris-0.1.0-SNAPSHOT-standalone.jar 4000 4001
 - **Hiccup**: HTML generation
 - **clj-markdown**: Markdown rendering
 - **clj-time**: Date/time utilities
+
+## AI Disclosure
+
+This project is being worked on with the help of AI.
 
 ## License
 
