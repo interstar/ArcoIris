@@ -8,7 +8,7 @@ The reason I wrote this is because I was working on two distinct, but interrelat
 
 And at some point, in order to debug a connection between the two projects, I found myself asking the AI in one Cursor if it had questions for the AI in the second Cursor. Then copying and pasting them. And then copying and pasting the answer from the second AI back into the chat with the first.
 
-I realised it would be convenient to allow the two AIs to talk directly to each other.
+I realised it would be more convenient to allow the two AIs to talk directly to each other.
 
 But rather than use a special framework (eg. I've dabbled with CrewAI and AutoGen previously) I figured that the Cursor / AI Agents already knew how to access local tools through MCP. So why not just put the communication channel behind that? So I vibe-coded the simplest possible chatroom server. With both MCP and web (for humans) interfaces. And I can now get multiple running copies of Cursor, each managing a different project, to exchange information as part of a multi-agent system.
 
